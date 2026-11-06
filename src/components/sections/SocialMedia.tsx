@@ -29,27 +29,35 @@ export function SocialMedia() {
         {/* Instagram Post Mockup Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
           {site.socialPosts.map((post) => (
-            <div
+            <a
               key={post.id}
-              className="bg-white rounded-3xl overflow-hidden border-2 border-gold-400/30 hover:border-gold-400 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between"
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-3xl overflow-hidden border-2 border-gold-400/30 hover:border-gold-400 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between group block"
             >
               <div>
                 {/* Mockup Instagram Post Header */}
                 <div className="p-4 flex items-center justify-between border-b border-cream-200">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-maroon-700 p-0.5 border border-gold-400 flex items-center justify-center">
-                      <span className="text-xs">🍨</span>
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-gold-400 shrink-0">
+                      <Image
+                        src="/images/instagram-profile.jpg"
+                        alt="Profil Instagram Es Puter Sari Rasa"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-maroon-900">
+                      <p className="text-xs font-bold text-maroon-900 group-hover:text-maroon-700 transition-colors">
                         {site.instagramHandle}
                       </p>
                       <p className="text-[10px] text-maroon-900/60">
-                        Es Puter Sari Rasa
+                        Es Puter Sari Rasa • Surakarta
                       </p>
                     </div>
                   </div>
-                  <Instagram className="w-4 h-4 text-maroon-700/60" />
+                  <Instagram className="w-5 h-5 text-maroon-700/60 group-hover:text-maroon-700 transition-colors" />
                 </div>
 
                 {/* Post Image Container */}
@@ -58,7 +66,7 @@ export function SocialMedia() {
                     src={post.imageSrc}
                     alt={post.caption}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
@@ -88,7 +96,7 @@ export function SocialMedia() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

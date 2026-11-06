@@ -19,14 +19,15 @@ export const site: SiteConfig = {
   ],
   url: "https://es-puter-sari-rasa.vercel.app",
 
-  // Data Kontak & Bisnis (TODO: Lengkapi dengan data asli pemilik usaha)
-  whatsapp: "6281234567890", // TODO: Ganti dengan nomor WhatsApp aktif pemilik (format 62...)
-  instagramHandle: "@esputersarirasa", // TODO: Ganti dengan username Instagram asli
-  instagram: "https://instagram.com/TODO_username", // TODO: Ganti dengan tautan profil IG asli
-  address: "TODO: Alamat gerai / tempat produksi usaha (mis. Jl. Slamet Riyadi No. XX, Surakarta)", // TODO: Isi alamat lengkap
-  openingHours: "TODO: Setiap Hari 10.00 - 20.00 WIB (atau sesuai jam operasional)", // TODO: Isi jam operasional
-  mapsUrl: "", // TODO: Tempelkan link Google Maps usaha bila sudah terdaftar di Google Maps
-  email: "sarirasa.esputer@gmail.com", // TODO: Isi email bisnis
+  // Data Kontak & Bisnis Resmi
+  whatsapp: "6289662711414",
+  instagramHandle: "@sarirasa.esputerr_",
+  instagram: "https://www.instagram.com/sarirasa.esputerr_/",
+  address: "Jalan Merak 6 No 14, Gumunggung, Gilingan, Banjarsari, Surakarta 57134",
+  openingHours: "Setiap Hari 10.00 - 20.00 WIB",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jalan+Merak+6+No+14+Gumunggung+Gilingan+Banjarsari+Surakarta+57134",
+  mapsEmbedUrl: "https://maps.google.com/maps?q=Jalan%20Merak%206%20No%2014%2C%20Gumunggung%2C%20Gilingan%2C%20Banjarsari%2C%20Surakarta%2C%20Jawa%20Tengah%2057134&t=&z=16&ie=UTF8&iwloc=&output=embed",
+  email: "sarirasa.esputer@gmail.com",
 
   // Varian Rasa Produk (Menampilkan foto produk resolusi tinggi dengan hiasan daun pandan & sendok)
   flavors: [
@@ -194,7 +195,7 @@ export const site: SiteConfig = {
     },
   ],
 
-  // Mockup Postingan Instagram Menggunakan Foto Asli Dokumentasi Usaha
+  // Mockup Postingan Instagram Menggunakan Foto Asli Akun @sarirasa.esputerr_
   socialPosts: [
     {
       id: "post-1",
@@ -202,15 +203,15 @@ export const site: SiteConfig = {
       likes: 184,
       comments: 26,
       tags: ["#EsPuterSariRasa", "#KulinerTradisional", "#SegarDingin"],
-      imageSrc: "/images/real-batch-cups.jpeg",
+      imageSrc: "/images/instagram-post-1.jpg",
     },
     {
       id: "post-2",
-      caption: "Tiga varian rasa yang siap temani harimu: Original Santan, Stroberi Segar, & Cokelat Legit! Mau coba yang mana dulu? ✨🍓🍫",
+      caption: "Tabung putar tradisional dan cup siap saji dengan sendok dan daun pandan segar! ✨🍓🍫",
       likes: 247,
       comments: 39,
       tags: ["#VarianRasa", "#EsPuterModern", "#ManisLegit"],
-      imageSrc: "/images/hero-trio.jpg",
+      imageSrc: "/images/instagram-post-2.jpg",
     },
     {
       id: "post-3",
@@ -218,7 +219,7 @@ export const site: SiteConfig = {
       likes: 203,
       comments: 17,
       tags: ["#PesananAcara", "#DapurSariRasa", "#EsPuterCup"],
-      imageSrc: "/images/real-process-2.jpeg",
+      imageSrc: "/images/instagram-post-3.jpg",
     },
   ],
 
@@ -275,8 +276,8 @@ export const site: SiteConfig = {
       id: "faq-4",
       question: "Apakah Es Puter Sari Rasa bisa diantar (delivery)?",
       answer:
-        "TODO: Konfirmasi jangkauan pengiriman lokal pemilik (kami melayani pesan antar untuk area sekitar lokasi usaha dengan kemasan khusus pendingin).",
-      isPending: true,
+        "Bisa! Kami melayani pesan antar (delivery) untuk wilayah Surakarta (Solo) dan sekitarnya dari gerai dapur kami di Jl. Merak 6 No. 14, Gumunggung, Gilingan, Banjarsari. Kami mengemas es dalam wadah khusus pendingin agar tetap dingin dan beku sempurna saat tiba.",
+      isPending: false,
     },
     {
       id: "faq-5",

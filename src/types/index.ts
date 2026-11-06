@@ -72,6 +72,7 @@ export interface SiteConfig {
   address: string;
   openingHours: string;
   mapsUrl: string;
+  mapsEmbedUrl: string;
   email: string;
   flavors: Flavor[];
   advantages: Advantage[];

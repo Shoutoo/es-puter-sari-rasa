@@ -125,44 +125,49 @@ export function Contact() {
 
           </div>
 
-          {/* Right Column: Interactive Map Placeholder Card */}
+          {/* Right Column: Live Interactive Google Maps Card */}
           <div className="lg:col-span-7">
             <div className="bg-white rounded-3xl p-4 sm:p-6 border-2 border-gold-400 shadow-card flex flex-col justify-between h-full">
               
-              {/* Map Visual Wrapper */}
-              <div className="relative aspect-[16/10] sm:aspect-[16/11] w-full rounded-2xl overflow-hidden bg-cream-100 border border-gold-400/30 flex flex-col items-center justify-center p-6 text-center">
-                
-                {/* Decorative map graphics */}
-                <div className="w-20 h-20 rounded-full bg-maroon-700/10 flex items-center justify-center mb-4 border border-gold-400/40">
-                  <MapPin className="w-10 h-10 text-maroon-700 animate-bounce" />
-                </div>
+              {/* Map Iframe Wrapper */}
+              <div className="relative aspect-[16/10] sm:aspect-[16/11] w-full rounded-2xl overflow-hidden bg-cream-100 border border-gold-400/30">
+                <iframe
+                  title="Titik Lokasi Google Maps Es Puter Sari Rasa"
+                  src={site.mapsEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
 
-                <h4 className="font-serif italic text-xl font-bold text-maroon-900 mb-2">
-                  Peta Lokasi Es Puter Sari Rasa
-                </h4>
-                <p className="text-xs sm:text-sm text-maroon-900/75 max-w-md leading-relaxed mb-6">
-                  {site.address}
-                </p>
-
-                <div className="inline-flex items-center gap-2 text-xs text-pandan-600 bg-pandan-200/60 px-3 py-1.5 rounded-full font-medium">
-                  <span className="w-2 h-2 rounded-full bg-pandan-600" />
-                  <span>Siap melayani take-away dan pesanan antar</span>
+                {/* Floating Location Pill on Map */}
+                <div className="absolute top-3 left-3 right-3 sm:right-auto bg-maroon-900/90 backdrop-blur-md text-cream-50 p-3 rounded-2xl border border-gold-400 shadow-soft text-xs max-w-sm pointer-events-none">
+                  <div className="flex items-center gap-2 font-bold text-gold-400">
+                    <MapPin className="w-4 h-4 text-gold-400 shrink-0" />
+                    <span>Es Puter Sari Rasa • Surakarta</span>
+                  </div>
+                  <p className="text-[11px] text-cream-100/90 mt-1 leading-snug">
+                    Jl. Merak 6 No. 14, Gumunggung, Gilingan, Banjarsari
+                  </p>
                 </div>
               </div>
 
               {/* Map Action Button */}
               <div className="mt-5 pt-4 border-t border-cream-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span className="text-xs text-maroon-900/60 text-center sm:text-left">
-                  Klik tombol untuk melihat rute petunjuk arah di aplikasi Google Maps.
+                <span className="text-xs text-maroon-900/70 text-center sm:text-left">
+                  Buka navigasi rute langsung ke gerai kami di aplikasi Google Maps.
                 </span>
                 <a
                   href={mapsQueryUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-cream-200 hover:bg-gold-400 text-maroon-900 font-bold px-6 py-3 rounded-full transition-all text-xs sm:text-sm min-h-[44px]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-500 text-maroon-900 font-bold px-6 py-3 rounded-full transition-all text-xs sm:text-sm min-h-[44px] shadow-soft"
                 >
-                  <MapPin className="w-4 h-4 text-maroon-700" />
-                  <span>Buka di Google Maps</span>
+                  <MapPin className="w-4 h-4 text-maroon-900" />
+                  <span>Petunjuk Arah Google Maps</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>
