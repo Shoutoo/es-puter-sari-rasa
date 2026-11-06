@@ -59,7 +59,7 @@ export function BrandJourney() {
                 src={site.brandJourney.afterImage}
                 alt="Kemasan Baru Es Puter Sari Rasa"
                 fill
-                className="object-contain p-4"
+                className="object-cover"
               />
               <div className="absolute top-4 right-4 z-10 bg-maroon-700 text-cream-50 text-xs font-bold px-3 py-1.5 rounded-full shadow-soft">
                 {site.brandJourney.afterLabel}
@@ -76,7 +76,7 @@ export function BrandJourney() {
                   src={site.brandJourney.beforeImage}
                   alt="Kemasan Lama Cup Polos"
                   fill
-                  className="object-contain p-4"
+                  className="object-cover"
                 />
               </div>
               <div className="absolute top-4 left-4 z-10 bg-neutral-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-soft">
@@ -167,3 +167,4 @@ export function BrandJourney() {
     </section>
   );
 }
+

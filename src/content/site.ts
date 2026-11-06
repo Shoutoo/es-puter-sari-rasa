@@ -28,7 +28,7 @@ export const site: SiteConfig = {
   mapsUrl: "", // TODO: Tempelkan link Google Maps usaha bila sudah terdaftar di Google Maps
   email: "sarirasa.esputer@gmail.com", // TODO: Isi email bisnis
 
-  // Varian Rasa Produk
+  // Varian Rasa Produk (Menampilkan foto produk resolusi tinggi dengan hiasan daun pandan & sendok)
   flavors: [
     {
       id: "original",
@@ -73,25 +73,25 @@ export const site: SiteConfig = {
     {
       id: "putar-tradisional",
       title: "Diputar Cara Tradisional",
-      desc: "Proses pemutaran drum es secara konsisten menghasilkan tekstur butiran es yang sangat lembut dan lumer di mulut.",
+      desc: "Proses pemutaran tabung drum es dengan es batu dan garam kasar menghasilkan tekstur butiran es yang sangat lembut dan lumer di mulut.",
       icon: "rotate-cw",
     },
     {
       id: "daun-pandan-asli",
       title: "Aroma Daun Pandan Alami",
-      desc: "Disajikan cantik dengan hiasan irisan daun pandan segar yang memberikan aroma wangi khas tradisi Nusantara.",
+      desc: "Setiap cup disajikan cantik dengan hiasan irisan daun pandan segar asli yang memberikan aroma harum tradisi Nusantara.",
       icon: "sparkles",
     },
     {
       id: "cup-sendok-praktis",
       title: "Cup Praktis & Higienis",
-      desc: "Dikemas rapi dalam cup mungil bersegel lengkap dengan sendok kecil, siap dinikmati kapan saja tanpa repot.",
+      desc: "Dikemas rapi dalam cup mungil lengkap dengan sendok, siap dinikmati kapan saja dan sangat cocok untuk suguhan berbagai acara.",
       icon: "package-check",
     },
     {
       id: "tiga-pilihan-rasa",
       title: "Tiga Rasa Ramah Semua Usia",
-      desc: "Koleksi rasa Original, Stroberi, dan Cokelat yang memikat hati dari anak-anak, remaja, hingga orang tua.",
+      desc: "Pilihan rasa Original santan, Stroberi segar, dan Cokelat legit yang memikat hati dari anak-anak hingga orang dewasa.",
       icon: "heart",
     },
   ],
@@ -109,7 +109,7 @@ export const site: SiteConfig = {
       step: 2,
       title: "Diputar Hingga Lembut",
       shortDesc: "Adonan dimasukkan tabung baja keliling es batu dan garam kasar, diputar ritmis.",
-      detail: "Proses pendinginan perlahan sambil diputar menghasilkan kristal es mikroskopis bertekstur creamy alami tanpa bahan pengembang kimia.",
+      detail: "Proses pendinginan perlahan sambil diputar menghasilkan kristal es mikroskopis bertekstur lembut alami tanpa bahan pengembang kimia.",
       timing: "Proses Inti",
     },
     {
@@ -130,108 +130,108 @@ export const site: SiteConfig = {
   processNote:
     "Catatan Kualitas: Es puter dikemas secara cepat dan terjadwal agar tekstur dingin dan kelembutannya tetap sempurna di tengah cuaca hangat tropis.",
 
-  // Galeri Foto & Kemasan
+  // Galeri Foto & Kemasan (Foto Asli Dokumentasi Usaha & Produk)
   gallery: [
     {
       id: "g1",
-      title: "Cup Es Puter Original",
+      title: "Deretan Cup Es Puter Siap Saji",
       category: "Produk",
-      caption: "Sajian cup mungil Es Puter Original berhias daun pandan segar dan sendok kayu mungil.",
-      alt: "Es puter original dalam cup kecil dengan daun pandan",
-      imageSrc: "/images/gallery-original.svg",
+      caption: "Dokumentasi asli produksi cup Es Puter Sari Rasa dengan irisan daun pandan segar dan sendok mungil.",
+      alt: "Foto asli deretan cup es puter sari rasa berdaun pandan",
+      imageSrc: "/images/real-batch-cups.jpeg",
       width: 600,
       height: 450,
     },
     {
       id: "g2",
-      title: "Trio Varian Rasa",
-      category: "Produk",
-      caption: "Tiga cup varian rasa lengkap: Stroberi ceria, Original santan, dan Cokelat legit.",
-      alt: "Tiga cup es puter sari rasa stroberi original cokelat",
-      imageSrc: "/images/gallery-trio.svg",
+      title: "Tabung Putar Baja Tradisional",
+      category: "Proses",
+      caption: "Tabung drum baja tradisional di dalam ember pendingin dengan es dan garam kasar untuk memutar es puter.",
+      alt: "Proses pembuatan es puter dengan tabung drum tradisional",
+      imageSrc: "/images/real-process-1.jpeg",
       width: 600,
       height: 450,
     },
     {
       id: "g3",
-      title: "Identitas Baru Kemasan",
-      category: "Kemasan",
-      caption: "Desain kemasan baru dengan logo resmi, lingkaran marun, dan detail ornamen emas.",
-      alt: "Kemasan baru es puter sari rasa",
-      imageSrc: "/images/gallery-packaging.svg",
+      title: "Pengemasan Cepat & Higienis",
+      category: "Proses",
+      caption: "Tim bergotong-royong menyendok es puter langsung dari tabung putar ke dalam cup agar tidak meleleh.",
+      alt: "Proses penuangan es puter ke dalam cup kecil",
+      imageSrc: "/images/real-process-2.jpeg",
       width: 600,
       height: 450,
     },
     {
       id: "g4",
-      title: "Proses Pemutaran Es",
-      category: "Proses",
-      caption: "Putaran drum tradisional menghasilkan tekstur es yang lembut dan lumer sempurna.",
-      alt: "Proses pembuatan es puter tradisional diputar",
-      imageSrc: "/images/gallery-process.svg",
+      title: "Trio Varian Rasa Lengkap",
+      category: "Produk",
+      caption: "Tiga cup varian rasa lengkap: Original santan pandan, Stroberi segar, dan Cokelat legit.",
+      alt: "Trio varian es puter sari rasa",
+      imageSrc: "/images/hero-trio.jpg",
       width: 600,
       height: 450,
     },
     {
       id: "g5",
-      title: "Varian Stroberi Dingin",
+      title: "Cup Varian Stroberi",
       category: "Produk",
-      caption: "Varian stroberi dengan warna merah muda lembut dan sensasi buah manis segar.",
-      alt: "Cup es puter rasa stroberi sari rasa",
-      imageSrc: "/images/gallery-strawberry.svg",
+      caption: "Penyajian cup es puter rasa buah stroberi yang manis dan segar dengan irisan daun pandan.",
+      alt: "Cup es puter stroberi sari rasa",
+      imageSrc: "/images/product-strawberry.jpg",
       width: 600,
       height: 450,
     },
     {
       id: "g6",
-      title: "Varian Cokelat Manis Gurih",
+      title: "Cup Varian Cokelat",
       category: "Produk",
-      caption: "Kaya akan rasa cokelat pekat yang berpadu dengan gurih santan tradisional.",
-      alt: "Cup es puter rasa cokelat sari rasa",
-      imageSrc: "/images/gallery-chocolate.svg",
+      caption: "Penyajian cup es puter cokelat legit dengan kelembutan santan dan aroma pandan alami.",
+      alt: "Cup es puter cokelat sari rasa",
+      imageSrc: "/images/product-chocolate.jpg",
       width: 600,
       height: 450,
     },
   ],
 
-  // Mockup Postingan Instagram
+  // Mockup Postingan Instagram Menggunakan Foto Asli Dokumentasi Usaha
   socialPosts: [
     {
       id: "post-1",
-      caption: "Cuaca panas paling pas ditemani segarnya Es Puter Sari Rasa Original! Wangi pandannya bikin rileks 🍃🍨",
-      likes: 142,
-      comments: 18,
+      caption: "Produksi hari ini siap meluncur! Wangi pandan segarnya langsung tercium saat cup dibuka 🍃🍨",
+      likes: 184,
+      comments: 26,
       tags: ["#EsPuterSariRasa", "#KulinerTradisional", "#SegarDingin"],
-      imageSrc: "/images/insta-post-1.svg",
+      imageSrc: "/images/real-batch-cups.jpeg",
     },
     {
       id: "post-2",
-      caption: "Varian Stroberi vs Cokelat, kamu tim yang mana nih? Keduanya sama-sama legit dan lembut di lidah! ✨🍓🍫",
-      likes: 215,
-      comments: 34,
+      caption: "Tiga varian rasa yang siap temani harimu: Original Santan, Stroberi Segar, & Cokelat Legit! Mau coba yang mana dulu? ✨🍓🍫",
+      likes: 247,
+      comments: 39,
       tags: ["#VarianRasa", "#EsPuterModern", "#ManisLegit"],
-      imageSrc: "/images/insta-post-2.svg",
+      imageSrc: "/images/hero-trio.jpg",
     },
     {
       id: "post-3",
-      caption: "Terima kasih pesanan 150 cup untuk acara arisan keluarga hari ini. Dikemas cepat dan sampai dalam keadaan beku sempurna! 🎉",
-      likes: 189,
-      comments: 12,
-      tags: ["#PesananAcara", "#Hajatan", "#EsPuterCup"],
-      imageSrc: "/images/insta-post-3.svg",
+      caption: "Dibalik kelembutan Es Puter Sari Rasa, ada proses pemutaran dan pengemasan cepat agar kualitas es tetap beku sempurna! 🎉",
+      likes: 203,
+      comments: 17,
+      tags: ["#PesananAcara", "#DapurSariRasa", "#EsPuterCup"],
+      imageSrc: "/images/real-process-2.jpeg",
     },
   ],
 
   // Perjalanan Brand (Transformasi Sebelum & Sesudah)
   brandJourney: {
-    beforeLabel: "Sebelum (Awal Mula)",
+    beforeLabel: "Sebelum (Awal Mula Usaha)",
     beforeDesc:
-      "Awalnya dijual menggunakan cup plastik polos tanpa label, merek belum dikenal, dan jangkauan promosi terbatas pada lingkaran pertemanan terdekat.",
-    beforeImage: "/images/brand-before.svg",
+      "Awalnya dijual menggunakan wadah cup polos tanpa identitas merek yang jelas dan hanya diedarkan secara terbatas pada lingkaran terdekat.",
+    beforeImage: "/images/real-batch-cups.jpeg",
     afterLabel: "Sesudah (Identitas Sari Rasa)",
     afterDesc:
       "Tampil percaya diri dengan identitas brand matang: logo terstandar, tiga varian rasa, cup berdaun pandan, kemasan higienis, dan media sosial terstruktur.",
-    afterImage: "/images/brand-after.svg",
+    afterImage: "/images/hero-trio.jpg",
     logoMeanings: [
       {
         title: "Scoop Es & Daun Pandan",
@@ -240,7 +240,7 @@ export const site: SiteConfig = {
       },
       {
         title: "Cup & Sendok Mungil",
-        meaning: "Mewakili kepraktisan menikmati kuliner tradisional zaman dahulu dalam format modern yang mudah dibawa, higienis, dan ramah anak-anak.",
+        meaning: "Mewakili kepraktisan menikmati kuliner tradisional zaman dahulu dalam format modern yang mudah dibawa, higienis, dan ramah keluarga.",
         symbolism: "Praktis & Higienis",
       },
       {

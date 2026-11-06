@@ -22,3 +22,4 @@
 - Before & After Slider dibuat dengan drag/touch interaktif murni tanpa dependensi eksternal berat.
 - Lightbox Galeri mendukung keyboard navigation (Escape, Left, Right) dan touch.
 - Form pemesanan cepat merangkai pesan otomatis WhatsApp via URL scheme `https://wa.me/...` tanpa backend database.
+

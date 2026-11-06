@@ -233,3 +233,4 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" wi
 fs.writeFileSync(path.join(imgDir, "og-image.svg"), ogSvg);
 
 console.log("All graphic assets successfully created!");
+

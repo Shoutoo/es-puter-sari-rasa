@@ -7,9 +7,9 @@ import { Flavor } from "@/types";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 const flavorImages: Record<string, string> = {
-  original: "/images/cup-original.svg",
-  stroberi: "/images/cup-strawberry.svg",
-  cokelat: "/images/cup-chocolate.svg",
+  original: "/images/product-original.jpg",
+  stroberi: "/images/product-strawberry.jpg",
+  cokelat: "/images/product-chocolate.jpg",
 };
 
 export function Flavors() {
@@ -96,12 +96,12 @@ export function Flavors() {
 
                 {/* Cup Visual */}
                 <div className="relative w-full h-56 sm:h-64 my-2 flex items-center justify-center">
-                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 transition-transform duration-300 group-hover:scale-105">
+                  <div className="relative w-full h-full max-w-[260px] rounded-2xl overflow-hidden border border-gold-400/40 shadow-soft transition-transform duration-500 group-hover:scale-105">
                     <Image
                       src={cupImg}
                       alt={`Cup Es Puter Sari Rasa Varian ${flavor.name}`}
                       fill
-                      className="object-contain"
+                      className="object-cover"
                     />
                   </div>
                 </div>
@@ -164,3 +164,4 @@ export function Flavors() {
     </section>
   );
 }
+

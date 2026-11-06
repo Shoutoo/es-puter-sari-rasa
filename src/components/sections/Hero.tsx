@@ -96,32 +96,29 @@ export function Hero() {
           {/* Right Column: Hero Visual Showcase */}
           <div className="lg:col-span-5 flex justify-center relative">
             {/* Visual Arch Container */}
-            <div className="relative w-72 h-80 sm:w-96 sm:h-[450px] lg:w-[420px] lg:h-[490px]">
+            <div className="relative w-80 h-96 sm:w-[440px] sm:h-[500px] lg:w-[460px] lg:h-[520px]">
               
-              {/* Traditional Arch Backdrop */}
-              <div className="absolute inset-0 bg-gradient-to-b from-maroon-900/80 to-maroon-900/40 rounded-arch border-2 border-gold-400/40 p-3 shadow-floating backdrop-blur-xs flex items-center justify-center">
-                <div className="w-full h-full rounded-[148px_148px_16px_16px] border border-gold-400/30 p-2 flex flex-col justify-end pb-8">
-                  <div className="bg-cream-50/10 backdrop-blur-sm rounded-2xl p-3 border border-cream-50/20 text-center">
-                    <p className="font-serif italic text-gold-400 text-sm font-semibold">
-                      Tradisi Dingin Nusantara
-                    </p>
-                    <p className="text-xs text-cream-100">
-                      Disajikan dengan cup mungil & irisan daun pandan
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Central Floating Cup Illustration */}
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <div className="relative w-full h-full transition-transform duration-500 hover:scale-105">
+              {/* Traditional Arch Backdrop & Image Frame */}
+              <div className="absolute inset-0 bg-gradient-to-b from-maroon-900/90 to-maroon-900/50 rounded-arch border-2 border-gold-400 p-3 shadow-floating backdrop-blur-xs flex flex-col justify-between overflow-hidden group">
+                <div className="relative w-full h-full rounded-[148px_148px_16px_16px] overflow-hidden border border-gold-400/40">
                   <Image
-                    src="/images/hero-ice-cream.svg"
-                    alt="Es Puter Sari Rasa dalam cup dengan daun pandan dan sendok mungil"
+                    src="/images/hero-trio.jpg"
+                    alt="Tiga varian Es Puter Sari Rasa dalam cup dengan daun pandan segar dan sendok"
                     fill
                     priority
-                    className="object-contain drop-shadow-2xl"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-maroon-950/80 via-transparent to-black/20" />
+                  
+                  {/* Floating badge inside image */}
+                  <div className="absolute bottom-4 left-4 right-4 bg-maroon-900/85 backdrop-blur-md rounded-2xl p-3.5 border border-gold-400/50 text-center shadow-soft">
+                    <p className="font-serif italic text-gold-400 text-sm sm:text-base font-bold">
+                      Tradisi Dingin Nusantara
+                    </p>
+                    <p className="text-xs text-cream-100/90 mt-0.5">
+                      3 Varian Rasa: Original Santan • Stroberi • Cokelat
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -133,3 +130,4 @@ export function Hero() {
     </section>
   );
 }
+

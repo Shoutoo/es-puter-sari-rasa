@@ -93,3 +93,4 @@ Repository ini telah dikonfigurasi dengan `vercel.json` dan arsitektur Next.js s
 3. **Import Project**: Klik tombol **"Add New..."** → **"Project"**, lalu pilih repository `es-puter-sari-rasa`.
 4. **Deploy**: Klik tombol **"Deploy"**. Vercel akan otomatis mendeteksi konfigurasi Next.js dan mempublikasikan website Anda ke alamat `https://es-puter-sari-rasa.vercel.app` (atau domain kustom Anda).
 5. **Continuous Deployment**: Setiap perubahan atau update teks di GitHub akan langsung di-deploy secara otomatis ke website live Anda!
+

@@ -10,3 +10,4 @@
 8. **Copywriting Alami & Konversional**: Menggunakan Bahasa Indonesia yang santai, bersahabat, tanpa jargon teknis, dan langsung menuntun aksi (active CTA).
 9. **Aksesibilitas Tanpa Kompromi (WCAG 2.2 AA)**: Kontras warna minimal 4.5:1, outline fokus keyboard yang jelas, urutan heading semantik, dan alt-text deskriptif.
 10. **Akurasi Data Terpusat**: Seluruh nomor kontak, harga, alamat, dan varian dikelola dalam satu sumber kebenaran (`site.ts`) dengan tanda `TODO` untuk data bisnis yang menunggu konfirmasi.
+

@@ -10,3 +10,4 @@ export function buildWhatsAppUrl(phoneNumber: string, message: string): string {
   const encodedMsg = encodeURIComponent(message);
   return `https://wa.me/${cleanNumber}?text=${encodedMsg}`;
 }
+

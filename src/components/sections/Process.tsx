@@ -1,4 +1,5 @@
-import { Sparkles, AlertCircle, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { Sparkles, AlertCircle, ArrowRight, Camera } from "lucide-react";
 import { site } from "@/content/site";
 
 export function Process() {
@@ -26,7 +27,7 @@ export function Process() {
         </div>
 
         {/* Steps Timeline Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative mb-14">
           {site.processSteps.map((step, idx) => (
             <div
               key={step.step}
@@ -66,8 +67,41 @@ export function Process() {
           ))}
         </div>
 
+        {/* Real Process Photos Showcase */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+          <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400 shadow-card bg-white p-2">
+            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
+              <Image
+                src="/images/real-process-1.jpeg"
+                alt="Tabung putar stainless steel es puter tradisional"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon-950/80 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 text-cream-50 text-xs sm:text-sm font-semibold">
+                Tabung Putar Baja Stainless &amp; Ember Es Tradisional
+              </div>
+            </div>
+          </div>
+
+          <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400 shadow-card bg-white p-2">
+            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
+              <Image
+                src="/images/real-process-2.jpeg"
+                alt="Pengemasan cepat es puter ke dalam cup berdaun pandan"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon-950/80 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 text-cream-50 text-xs sm:text-sm font-semibold">
+                Penyendokan Cepat ke Cup Higienis Berdaun Pandan
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Honest Production Note from Presentation */}
-        <div className="mt-12 max-w-4xl mx-auto bg-maroon-900 text-cream-50 rounded-3xl p-6 sm:p-8 border border-gold-400/40 shadow-card flex flex-col sm:flex-row items-center sm:items-start gap-5">
+        <div className="max-w-4xl mx-auto bg-maroon-900 text-cream-50 rounded-3xl p-6 sm:p-8 border border-gold-400/40 shadow-card flex flex-col sm:flex-row items-center sm:items-start gap-5">
           <div className="w-12 h-12 rounded-2xl bg-gold-400/20 text-gold-400 flex items-center justify-center shrink-0 border border-gold-400/40">
             <AlertCircle className="w-6 h-6" />
           </div>
@@ -85,3 +119,4 @@ export function Process() {
     </section>
   );
 }
+

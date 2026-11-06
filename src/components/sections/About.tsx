@@ -31,8 +31,8 @@ export function About() {
             <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl p-3 bg-cream-200/80 border-2 border-gold-400 shadow-card">
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-white border border-gold-400/30">
                 <Image
-                  src="/images/gallery-packaging.svg"
-                  alt="Es Puter Sari Rasa kemasan cup higienis berdaun pandan"
+                  src="/images/real-batch-cups.jpeg"
+                  alt="Dokumentasi asli dapur produksi Es Puter Sari Rasa dalam cup dengan daun pandan"
                   fill
                   className="object-cover"
                 />
@@ -110,3 +110,4 @@ export function About() {
     </section>
   );
 }
+
