@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <rect width="1200" height="630" fill="#6B1414"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" stroke="#E8C27A" stroke-width="3"/>
+  <circle cx="950" cy="315" r="220" fill="#4A0E0E" opacity="0.4"/>
+  <text x="100" y="220" font-family="Georgia, serif" font-style="italic" font-size="64" fill="#FFF8EE">Es Puter</text>
+  <text x="100" y="290" font-family="sans-serif" font-weight="900" font-size="62" fill="#E8C27A" letter-spacing="6">SARI RASA</text>
+  <line x1="100" y1="320" x2="650" y2="320" stroke="#E8C27A" stroke-width="3"/>
+  <text x="100" y="370" font-family="sans-serif" font-weight="600" font-size="24" fill="#CFE3C4" letter-spacing="4">TRADISIONAL • SEGAR DINGIN • MANIS LEGIT</text>
+  <text x="100" y="430" font-family="sans-serif" font-size="20" fill="#FAF1DF">Sensasi rasa santan pandan alami dalam kemasan cup praktis &amp; higienis.</text>
+  <text x="950" y="340" text-anchor="middle" font-size="120">🍨</text>
+</svg>

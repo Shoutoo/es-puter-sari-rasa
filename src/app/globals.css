@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maroon-900: #4A0E0E;
+  --maroon-700: #6B1414;
+  --maroon-500: #8E2A2A;
+  --cream-50: #FFF8EE;
+  --cream-200: #F6E7CF;
+  --pink-300: #F2A7B8;
+  --pandan-600: #4E7D45;
+  --pandan-200: #CFE3C4;
+  --choco-700: #5A3523;
+  --gold-400: #E8C27A;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--cream-50);
+  color: var(--maroon-900);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessibility focus ring */
+:focus-visible {
+  outline: 2px solid var(--maroon-700);
+  outline-offset: 3px;
+}
+
+/* Motion preference accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #6B1414;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4A0E0E;
+}
+
+/* Gold border accent */
+.border-gold {
+  border-color: #E8C27A;
+}
+
+/* Leaf ornament sway */
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-sway {
+  animation: sway 6s ease-in-out infinite;
+}
+
+/* WhatsApp soft pulse */
+@keyframes softPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(78, 125, 69, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(78, 125, 69, 0);
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 3s infinite;
+}

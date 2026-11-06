@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450" width="100%" height="100%" fill="none">
+    <rect width="450" height="450" fill="#FAF1DF" rx="16"/>
+    <rect x="16" y="16" width="418" height="418" rx="12" stroke="#E8C27A" stroke-width="1.5"/>
+    <circle cx="225" cy="190" r="95" fill="#6B1414" opacity="0.08"/>
+    <circle cx="225" cy="185" r="50" fill="#6B1414"/>
+    <text x="225" y="198" text-anchor="middle" font-size="36">🍨</text>
+    <rect x="135" y="265" width="180" height="32" rx="16" fill="#6B1414"/>
+    <text x="225" y="286" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFF8EE">@esputersarirasa</text>
+    <text x="225" y="335" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#4A0E0E">Momen Manis #1</text>
+  </svg>

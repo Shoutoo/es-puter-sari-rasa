@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%" fill="none">
+  <!-- TODO: Ganti dengan file logo resmi pemilik usaha -->
+  <g transform="translate(10, 10)">
+    <!-- Cup Base -->
+    <path d="M25 65 L35 95 Q50 98 65 95 L75 65 Z" fill="#FFF8EE" stroke="#E8C27A" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M23 65 L77 65" stroke="#E8C27A" stroke-width="3" stroke-linecap="round"/>
+    <!-- Ice cream scoop -->
+    <path d="M28 65 C22 50 35 32 50 32 C65 32 78 50 72 65 Z" fill="#FFF8EE" stroke="#E8C27A" stroke-width="2.5"/>
+    <circle cx="50" cy="46" r="16" fill="#FAF1DF" opacity="0.8"/>
+    <!-- Pandan leaf -->
+    <path d="M48 34 C44 20 54 12 58 10 C58 18 56 26 48 34 Z" fill="#CFE3C4" stroke="#4E7D45" stroke-width="1.5"/>
+    <path d="M52 35 C58 22 70 18 76 16 C70 24 64 30 52 35 Z" fill="#E2F0DB" stroke="#4E7D45" stroke-width="1.5"/>
+    <!-- Mini spoon -->
+    <path d="M68 45 L86 24 C89 20 95 24 92 28 L74 52 Z" fill="#E8C27A" stroke="#FFF8EE" stroke-width="1.5"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(115, 25)">
+    <!-- Serif italic "Es Puter" -->
+    <text x="0" y="32" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-weight="700" font-size="28" fill="#FFF8EE" letter-spacing="0.5">Es Puter</text>
+    <!-- Bold wide "SARI RASA" -->
+    <text x="2" y="60" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="24" fill="#E8C27A" letter-spacing="4">SARI RASA</text>
+    <!-- Thin decorative line -->
+    <line x1="2" y1="70" x2="215" y2="70" stroke="#E8C27A" stroke-width="1.5"/>
+    <!-- Small uppercase "TRADISIONAL" -->
+    <text x="6" y="81" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="10" fill="#CFE3C4" letter-spacing="3.5">TRADISIONAL • SEGAR • LEGIT</text>
+  </g>
+</svg>
